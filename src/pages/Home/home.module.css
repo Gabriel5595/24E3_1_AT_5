@@ -1,0 +1,38 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header"
+        "globalmenu globalmenu ads"
+        "contextmenu maincontent ads"
+        "contextmenu maincontent ads"
+        "contextmenu maincontent ads"
+        "contextmenu maincontent ads"
+        "footer footer footer";
+    gap: 10px;
+    padding: 10px;
+    height: 100vh;
+}
+
+/* Layout grande para desktop (tela maior) */
+@media (min-width: 700px) {
+    .gridContainer {
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-areas:
+            "header header header"
+            "globalmenu globalmenu globalmenu"
+            "contextmenu maincontent ads"
+            "contextmenu maincontent ads"
+            "contextmenu maincontent ads"
+            "contextmenu maincontent ads"
+            "contextmenu maincontent ads"
+            "footer footer footer";
+    }
+}
+
+/* Estilo básico para garantir que as áreas sejam visíveis */
+.gridContainer>* {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
