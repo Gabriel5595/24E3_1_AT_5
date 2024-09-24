@@ -15,7 +15,6 @@
     height: 100vh;
 }
 
-/* Layout grande para desktop (tela maior) */
 @media (min-width: 700px) {
     .gridContainer {
         grid-template-columns: 200px 1fr 200px;
@@ -31,7 +30,6 @@
     }
 }
 
-/* Estilo básico para garantir que as áreas sejam visíveis */
 .gridContainer>* {
     border: 1px solid #ccc;
     padding: 20px;
